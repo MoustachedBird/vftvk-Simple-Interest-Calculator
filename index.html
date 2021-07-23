@@ -1,16 +1,51 @@
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <main>
+            <h1><b>Simple Interest Calculator</b></h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+            <ul id="fields">
+                <li>
+                    Amount 
+                    <input type="number"  id="principal" min="0">
+                </li>
+                <li>
+                    Interest rate 
+                    <input type="range"  step="0.1" id="rate" value="10.5" min="0" max="21" onchange="showValue(this.value)">
+                    <output id="percentage">10.5</output>
+                </li>
+                <li>
+                    No. of Years 
+                    <select name="years" id="years">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </li>
+                <li>
+                    <button onclick="compute()">
+                        Compute interest
+                    </button>
+                </li>
+                <li id="result-content">
+                    <div>If you deposit <span id="r_amount">hola</span>,</div>
+                    <div>at an interest rate of <span id="r_interest"></span>.</div>
+                    <div>You will receive an amount of <span id="result"></span>,</div>
+                    <div>in the year <span id="r_date"></span></div>
+                </li>
+            </ul>
+            <br>
+            © Everyone Can Get Rich
+        </main>
     </body>
 </html>

@@ -1,4 +1,57 @@
-body {background-color:tan;}
-h1{color:green;}
+*{
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+
+main {
+    max-width: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+ul{
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+ul li:nth-child(1) input{  
+    margin-left: 3rem;
+}
+
+ul li:nth-child(2) input{  
+    margin-left: 1rem;
+}
+
+ul li:nth-child(3) select{  
+    margin-left: 1rem;
+}
 
 
+ul li:nth-child(5){  
+    display: none;
+}
+
+span{
+    background-color: yellow;
+}
+
+li{
+    padding: 0.3rem;
+}
+
+h1{
+    color:gray;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button{
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
