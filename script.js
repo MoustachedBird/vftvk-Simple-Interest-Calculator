@@ -15,6 +15,7 @@ function compute()
         document.getElementById('r_interest').innerHTML = rate
         document.getElementById('result').innerHTML = amount*rate/100*years
         document.getElementById('r_date').innerHTML = new Date().getFullYear() + parseInt(years)
+        document.getElementById('r_total').innerHTML = amount*rate/100*years + parseInt(amount)
     }
 }
         
